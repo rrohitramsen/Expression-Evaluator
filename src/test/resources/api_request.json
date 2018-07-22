@@ -1,0 +1,21 @@
+{
+  "expression": [
+    ["OR", ["IN", "event.category", ["infant", "child", "teen"]], ["LT", "user.age", 18]],
+    ["AND", ["EQ", "user.address.city", "Los Angeles"], ["GT", "user.age", 35]]
+  ]
+,
+  "user": {
+    "address": {
+      "address-line": "XYZ Street",
+      "city": "San Francisco",
+      "state": "CA",
+      "zipcode": "94150"
+    },
+    "age": 35,
+    "event": {
+      "category": "infant"
+    },
+    "first-name": "Jhon",
+    "last-name": "Marley"
+  }
+}
