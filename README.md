@@ -38,7 +38,7 @@ $ ./expression_evaluator.sh
       "address-line": "XYZ Street",
       "city": "San Francisco",
       "state": "CA",
-      "zipCode": "94150"
+      "zipcode": "94150"
     },
     "age": 35,
     "event": {
