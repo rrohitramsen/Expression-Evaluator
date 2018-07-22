@@ -30,6 +30,11 @@ public class ExpressionEvaluatorServiceImpl implements ExpressionEvaluatorServic
 
         for (ArrayList<Object> expression : expressions) {
             LOGGER.debug("Evaluating expression :: "+expression.toString());
+
+            if (!ExpressionEvaluatorEngine.isExpression(expression)) {
+                throw new EvaluatorExpressionException("Invalid Expression,"+expression.toString());
+            }
+
             boolean result = ExpressionEvaluatorEngine.evaluateExpression(user, expression);
             resultMap.put(expression, result);
         }

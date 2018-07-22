@@ -80,6 +80,20 @@ public abstract class ExpressionEvaluatorEngine {
 
                 return root.getOperator().execute(((Operand)left).getValue(), ((Operand)right).getValue());
 
+            } else if (left instanceof Operand && !(right instanceof Operand)) {
+
+                /**
+                 * expression - ["AND", ["EQ", "user.address.city", "Los Angeles"], false]
+                 */
+                return root.getOperator().execute(((Operand)left).getValue(), right);
+
+            } else if (!(left instanceof Operand) && (right instanceof Operand)) {
+
+                /**
+                 * expression - ["AND", ["EQ", "user.address.city", "Los Angeles"], false]
+                 */
+                return root.getOperator().execute(left, ((Operand)right).getValue());
+
             } else {
 
                 return root.getOperator().execute(left, right);
@@ -116,6 +130,7 @@ public abstract class ExpressionEvaluatorEngine {
                     throw new EvaluatorExpressionException("Invalid Operator Name,"+value.toString());
                 }
                 root = new Node(operator);
+
             }
 
             if ( (expression.get(1) instanceof ArrayList) && isExpression((ArrayList<Object>) expression.get(1))) {
@@ -207,7 +222,7 @@ public abstract class ExpressionEvaluatorEngine {
      * @param expression
      * @return
      */
-    private static boolean isExpression(ArrayList<Object> expression) {
+    public static boolean isExpression(ArrayList<Object> expression) {
 
         int length = expression.size();
 

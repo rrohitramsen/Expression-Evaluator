@@ -6,6 +6,7 @@ Expression Evaluator
 * [Problem Statement](https://docs.google.com/document/d/16CKK4nL9peu2OORAVP4Gm8-N-8RCPiFv--0ku6jRibo/edit)
 
 
+
 ## `How to Start`
 * [expression_evaluator.sh](/expression_evaluator.sh) execute this script. 
 ```
@@ -259,6 +260,11 @@ public class APITest {
 ![swagger-home](/Users/rohitkumar/Work/expression-evaluator/src/main/resources/images/swagger_home.png)
 ![swagger-request](/Users/rohitkumar/Work/expression-evaluator/src/main/resources/images/Swagger_Request.png)
 ![swagger-response](/Users/rohitkumar/Work/expression-evaluator/src/main/resources/images/Swagger_Response.png)
+
+
+# Cases not supported for now.
+* Not operator not supported.
+* Expression - ["AND", ["IN", "event.category", ["infant", "child", "teen"]], ["LT1", "user.age", 18]] is failing.
 
 ### Thanks for your time.
 
