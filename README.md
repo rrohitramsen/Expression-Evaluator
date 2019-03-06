@@ -3,7 +3,7 @@ Expression Evaluator
 
 `Problem Statement`
 -------------------
-* ![swagger-home](/Users/rohitkumar/Work/expression-evaluator/src/main/resources/images/problem_statement.png)
+* ![swagger-home](/src/main/resources/images/problem_statement.png)
 
 
 
@@ -257,9 +257,9 @@ public class APITest {
 1. Open Swagger Home
 2. Execute the post request using request json.
 3. Server will return json response.
-![swagger-home](/Users/rohitkumar/Work/expression-evaluator/src/main/resources/images/swagger_home.png)
-![swagger-request](/Users/rohitkumar/Work/expression-evaluator/src/main/resources/images/Swagger_Request.png)
-![swagger-response](/Users/rohitkumar/Work/expression-evaluator/src/main/resources/images/Swagger_Response.png)
+![swagger-home](/src/main/resources/images/swagger_home.png)
+![swagger-request](src/main/resources/images/Swagger_Request.png)
+![swagger-response](/src/main/resources/images/Swagger_Response.png)
 
 
 ### Cases not supported for now.
