@@ -3,7 +3,7 @@ Expression Evaluator
 
 `Problem Statement`
 -------------------
-* [Problem Statement](https://docs.google.com/document/d/16CKK4nL9peu2OORAVP4Gm8-N-8RCPiFv--0ku6jRibo/edit)
+* ![swagger-home](/Users/rohitkumar/Work/expression-evaluator/src/main/resources/images/problem_statement.png)
 
 
 
